@@ -1,6 +1,6 @@
 {
   "name": "restclient-rht21",
-  "displayName": "REST Client",
+  "displayName": "REST Client (rht21)",
   "description": "REST Client for Visual Studio Code and Cursor",
   "version": "1.0.0",
   "publisher": "rht-21",
