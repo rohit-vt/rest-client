@@ -1,5 +1,5 @@
 ## 1.0.0 (2026/09/02)
-Forked from [humao.rest-client](https://github.com/Huachao/vscode-restclient) 0.26.0 as `rht-21.rest-client`.
+Forked from [humao.rest-client](https://github.com/Huachao/vscode-restclient) 0.26.0 as `rht-21.restclient-rht21`.
 
 * __Bug Fix__: Resolve requests against their own document instead of `window.activeTextEditor`, fixing silent
   "Send Request" no-ops and `TypeError: Cannot read properties of undefined (reading 'uri')` in the document

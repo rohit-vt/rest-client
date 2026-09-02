@@ -1,7 +1,7 @@
 # REST Client
 
 A personal fork of [REST Client](https://github.com/Huachao/vscode-restclient) by Huachao Mao, published as
-`rht-21.rest-client`. It is a drop-in replacement: commands, settings and the `~/.rest-client` data directory
+`rht-21.restclient-rht21`. It is a drop-in replacement: commands, settings and the `~/.rest-client` data directory
 match upstream, so uninstall `humao.rest-client` before using this one — with both enabled every request gets
 two "Send Request" CodeLenses.
 
@@ -733,7 +733,6 @@ exchange | Preview the whole HTTP exchange(request and response)
 * `rest-client.showResponseInDifferentTab`: Show response in different tab. (Default is __false__)
 * `rest-client.requestNameAsResponseTabTitle`: Show request name as the response tab title. Only valid when using html view, if no request name is specified defaults to "Response". (Default is __false__)
 * `rest-client.rememberCookiesForSubsequentRequests`: Save cookies from `Set-Cookie` header in response and use for subsequent requests. (Default is __true__)
-* `rest-client.enableTelemetry`: Send out anonymous usage data. (Default is __false__)
 * `rest-client.excludeHostsForProxy`: Excluded hosts when using proxy settings. (Default is __[]__)
 * `rest-client.fontSize`: Controls the font size in pixels used in the response preview. (Default is __13__)
 * `rest-client.fontFamily`: Controls the font family used in the response preview. (Default is __Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback"__)
