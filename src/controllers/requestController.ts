@@ -4,7 +4,6 @@ import { IRestClientSettings, RequestSettings, RestClientSettings } from '../mod
 import { HistoricalHttpRequest, HttpRequest } from '../models/httpRequest';
 import { RequestMetadata } from '../models/requestMetadata';
 import { RequestParserFactory } from '../models/requestParserFactory';
-import { trace } from "../utils/decorator";
 import { HttpClient } from '../utils/httpClient';
 import { RequestState, RequestStatusEntry } from '../utils/requestStatusBarEntry';
 import { RequestVariableCache } from "../utils/requestVariableCache";
@@ -30,7 +29,6 @@ export class RequestController {
         this._textDocumentView = new HttpResponseTextDocumentView();
     }
 
-    @trace('Request')
     public async run(range?: Range, document: TextDocument | undefined = getCurrentTextDocument()) {
         if (!document) {
             window.showErrorMessage('No http request file is open to send a request from.');
@@ -65,7 +63,6 @@ export class RequestController {
         await this.runCore(httpRequest, settings, document);
     }
 
-    @trace('Rerun Request')
     public async rerun() {
         if (!this._lastRequestSettingTuple) {
             return;
@@ -77,7 +74,6 @@ export class RequestController {
         await this.runCore(request, settings);
     }
 
-    @trace('Cancel Request')
     public async cancel() {
         this._lastPendingRequest?.cancel();
 
